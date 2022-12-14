@@ -28,11 +28,15 @@
 5. Верните с помощью return как результат функции parseProducts переменную products.
 
 Создайте функцию renderProductsCards(json). Аргументом функции renderProductsCards является JSON.
-
+function parseProducts(json) {
+let data = JSON.parse(json);
+let products = data.products;
+return products;
+}
 1. Напишите следующий текст:
     ```javascript
     function renderProductsCards(json){
-       // дальнейшие действия требуется выполнять тут
+     // дальнейшие действия требуется выполнять тутre
     }
     ```
 2. Вызовите в функции renderProductsCards функцию clearProducts() — она уже написана в коде, просто вызовите её таким образом: 
